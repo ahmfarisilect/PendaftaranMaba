@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String nomorPendaftaran = etNomorPendaftaran.getText().toString();
                 String nama = etNama.getText().toString();
-
+                   
                 if(nomorPendaftaran.trim().equals("")){
                     etNomorPendaftaran.setError("Nomor Pendaftaran Wajib Diisi");
                 }
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                     etNama.setError("Nama Wajib Diisi");
                 }
                 else{
-                    Toast.makeText(MainActivity.this, "Pendaftaran Berhasil", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Selamat, Pendaftaran Berhasil", Toast.LENGTH_SHORT).show();
                 }
 
             }
